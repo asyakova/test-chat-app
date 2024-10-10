@@ -118,7 +118,7 @@ const Chat: React.FC = () => {
                     fullWidth
                     multiline
                     placeholder="Type a message..."
-                    className="flex w-full flex-col gap-1.5 !rounded-[26px] p-1.5 transition-colors bg-[#f4f4f4] dark:bg-token-main-surface-secondary"
+                    className="flex w-full flex-col gap-1.5 !rounded-[26px] p-1.5 transition-colors  dark:bg-token-main-surface-secondary"
                     slotProps={{
                         input: {
                             endAdornment: (
@@ -161,6 +161,8 @@ const Chat: React.FC = () => {
                         },
                     }}
                     sx={{
+                        bgcolor: darkMode ? 'rgb(47, 47, 47)' : 'rgb(244, 244, 244)',
+
                         '& .MuiOutlinedInput-root': {
                             border: 'none',
                         },
